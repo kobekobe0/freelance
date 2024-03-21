@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-size: 14px;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: black;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height:326px;
+  width: 370px;
+  padding: 0 20px;
+  align-self: center;
+  background-color: rgb(255, 255, 255);
+  margin-top: 6em;
+    font-weight: 400;
+}
+
+.section {
+  width: 100%;
+}
+
+.All-page{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+    padding-top: 10px;
+  padding-bottom: 10px;
+    font-weight: lighter;
+}
+
+.All-page h3 {
+  font-weight: 400;
+  line-height: 18.2px;
+}
+
+.check-box-wrapper{
+  overflow-y: scroll;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.check-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.check-box h3 {
+    font-weight: 400;
+  line-height: 18.2px;
+}
+
+h3 {
+  margin:0;
+}
+
+input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative; 
+}
+
+.check-box:hover input[type="checkbox"]:not(:checked) {
+  border: 2px solid #c9c9c9;
+}
+
+input[type="checkbox"]:checked:after {
+  content: url("data:image/svg+xml,%3Csvg width='19' height='14' viewBox='0 0 19 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 7.6L7.03451 12.9672C7.05497 12.9854 7.08626 12.9837 7.1047 12.9635L18 1' stroke='white' stroke-linecap='round'/%3E%3C/svg%3E");
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #2469F6;
+}
+
+.check-box:hover input[type="checkbox"]:checked {
+  background-color: #5087F8;
+}
+
+.button-wrapper{
+    margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.button-wrapper button {
+    background-color:#FFCE22;
+  color: black;
+  font-weight: 300;
+  border: none;
+  width: 100%;
+  padding: 10px 20px 10px 20px;
+  border-radius: 4px;
+}
+
+.button-wrapper button:hover {
+  background-color: #FFD84D;
+  color: black;
+  cursor: pointer;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
